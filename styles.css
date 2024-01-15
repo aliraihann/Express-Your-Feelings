@@ -1,0 +1,91 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(20,100,255);
+    color: white;
+    font-size: 16px; 
+    font-family: 'Franklin Gothic';
+   }
+   label {
+     display: block;
+     margin: 0.5rem 0;
+   }
+   h1 {
+     margin: 1em auto 0.7em;
+     text-align: center;
+     font-weight: bold;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 50px;
+   }
+   p {
+     margin: 0.7em auto;
+     text-align: center;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   form{
+     margin: 0 auto;
+     max-width: 1000px;
+     min-width: 300px;
+     width: 60vw;
+   
+   }
+   fieldset {
+     margin: 0 0 1em 0;
+   }
+   
+   legend {
+     text-align: center;
+     font-family: 'Franklin Gothic Medium';
+     font-size: 24px;
+   }
+   div {
+     margin: 1em auto;
+   }
+   div.first-fieldset input, div.first-fieldset select{
+     width: 100%;
+     font-family: 'Franklin';
+     height: 1.8em;
+   }
+   div.second-fieldset label, div.second-fieldset input, div.third-fieldset label, div.third-fieldset input {
+     display: inline;
+     vertical-align: middle;
+   }
+   div.second-fieldset, div.third-fieldset {
+     text-align: center;
+   }
+   textarea {
+     width: 100%;
+     font-family: 'Franklin';
+     resize: none;
+   }
+   
+   fieldset {
+     background-color:rgba(40,20,255, 35%);
+     border: none;
+     padding: 1rem auto;
+   }
+   
+   ::placeholder {
+     font-family: 'Franklin';
+     color: rgba(10,10,255, 55%);
+     font-size: 16px;
+   }
+   option {
+     font-family: 'Franklin';
+     font-size: 16px;
+     color: rgba(10,10,255, 55%);
+   }
+   
+   input[type="submit"] {
+     width: 100%;
+     padding: 0.5rem;
+     margin-bottom: 3rem;
+     color: rgb(20,100,255);
+     font-family: 'Franklin Gothic Medium';
+     font-size: 16px;
+   }
+   input[type="submit"]:hover {
+     color: red;
+   }
+   

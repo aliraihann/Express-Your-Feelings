@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+    <body>
+      <h1 id="title"><strong>How do</strong> you feel today?</h1>
+      <p id="description">Here is to express your feeling without judgement.</p>
+      <form action="https://submit-your-demo.howisyourday.com" id="survey-form" method="POST">
+      <fieldset>
+        <div class="first-fieldset">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="Please enter your name" required />
+        <label id="number-label">Age</label>
+        <input id="number" type="number" name="number" pattern="[0-9]{2}" min="14" max="99" placeholder="25" />
+        <label for="dropdown" name="dropdown">What is your gender?</label>
+          <select id="dropdown" name="gender">
+            <option value="">(select one)</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+          </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>How you describe yourself?</legend>
+          <div class="second-fieldset">
+            <input id="father" type="radio" name="person-type" value="father" checked />
+            <label for="father" class="inline"> a Father</label>
+            <input id="mother" type="radio" name="person-type" value="mother" /> 
+            <label for="mother" class="inline"> a Mother</label>
+            <input id="son" type="radio" name="person-type" value="son" /> 
+            <label for="son" class="inline"> a Son</label>
+            <input id="daughter" type="radio" name="person-type" value="daughter" />
+            <label for="daughter" class="inline"> a Daughter</label>
+            <input id="partner" type="radio" name="person-type" value="partner" />
+            <label for="partner" class="inline"> a Partner</label>
+            <input id="brother" type="radio" name="person-type" value="brother" />
+            <label for="brother" class="inline"> a Brother</label>
+            <br>
+            <br>
+            <input id="sister" type="radio" name="person-type" value="sister"/>
+            <label for="sister" class="inline"> a Sister</label>
+            <input id="friend" type="radio" name="person-type" value="friend"/>
+            <label for="friend" class="inline"> a Friend</label>
+            <input id="boss" type="radio" name="person-type" value="boss"/>
+            <label for="boss" class="inline"> a Boss</label>
+            <input id="worker" type="radio" name="person-type" value="worker"/>
+            <label for="worker" class="inline"> a Worker</label>
+            <input id="human" type="radio" name="person-type" value="human"/>
+            <label for="human" class="inline"> a Human Being</label>
+          </div>
+      </fieldset>
+      <fieldset>
+          <legend>What you consider as the topic of your stories?</legend>
+          <div class="third-fieldset">
+            <input id="family" type="checkbox" name="topic" value="family" checked />
+            <label for="family" class="inline">Family</label>
+            <input id="friendship" type="checkbox" name="topic" value="friendship" />
+            <label for="friendship" class="inline">Friendship</label>
+            <input id="romance" type="checkbox" name="topic" value="romance" />
+            <label for="romance" class="inline">Romance</label>
+            <input id="career" type="checkbox" name="topic" value="career" />
+            <label for="career" class="inline">Career</label>
+            <input id="self-reflection" type="checkbox" name="topic" value="self-reflection" />
+            <label for="self-reflection" class="inline">Self-reflection</label>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>So, how was your day?</legend>
+      <label for="your-day">
+        <textarea id="stories" rows="15" cols="50" placeholder="As for today, it's been..." name="stories" required></textarea>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </body>
+  </head>
+</html>
